@@ -31,7 +31,7 @@ function loadMore() {
   loadMoreInfo(inputText).then(data => {
     createMarkup(data.hits);
     window.scrollTo({
-      top: document.documentElement.offsetHeight,
+      top: document.documentElement.offsetHeight - 100,
       behavior: 'smooth',
     });
   });
